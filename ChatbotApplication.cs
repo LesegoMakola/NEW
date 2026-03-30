@@ -35,7 +35,7 @@ internal sealed class ChatbotApplication
         UserProfile user = GetUserProfile();
 
         _consoleUiService.WriteBotMessage(
-            $"Hello, {user.Name}. I am your Cybersecurity Awareness Assistant. Ask me about passwords, phishing, or safe browsing.");
+            $"Hello, {user.Name}. I am your Cybersecurity Awareness Assistant. Ask me about passwords, phishing, or safe browsing or anything about cybersecurity.");
         _consoleUiService.WriteInfo("Type 'exit' whenever you want to close the chatbot.");
 
         StartConversation(user);
